@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8"/> 
+
+    <title> Tudo Sobre Google Glass</title>
+ <style>
+        @font-face {
+            font-family: face;
+            src: url(/home/usuario/Documentos/projeto/Bubblegum.ttf);
+        }
+
+    h1 {
+font-family: fontelogo;
+font-size: 40pt;
+color: blue;
+text-shadow: 2px 2px 20px black;
+
+
+    }  
+    p {
+        text-align: justify;text-indent: 1px;
+    }
+    /*formataçãode imagens com legenda   */
+figure.foto-legenda {
+    position: relative;
+    border: 20px solid rgb(253, 252, 252);
+    box-shadow: 3px 3px 8px black;
+}
+figure.foto-legenda img {
+width: 100%;
+height: 100%;
+}
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: relative;
+    top: 2;
+    background-color: rgba(0,0,0,.4);
+    color: rgb(214, 36, 36)
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    transition:(opacity 0,1,1;)
+    margin:2px
+    -webkit-transition: background-color 1s;
+    -moz-transition: backgroun-color 1s;
+    -o-transition: background-color 1s;
+    -ms-transition:backgroun-color 1s;
+    transition:background-color: 1s;
+}
+
+figure.foto-legenda:hover figcaption {
+    opacity: 5;
+}
+ nav#Menu {
+    display: block;
+ }
+
+nav#Menu ul{
+list-style: none;
+text-transform: uppercase;
+position: absolute;
+top:-10px ;
+left:900px ;
+font-size: 12px;
+}
+nav#Menu li {
+    display: inline-block;
+    background-color: #b8e6f1;
+    padding: 10px;
+    margin: 2px;
+    -webkit-transition: background-color 1s;
+    -moz-transition: backgroun-color 1s;
+    -o-transition: background-color 1s;
+    -ms-transition:backgroun-color 1s;
+    transition:background-color: 1s;
+}
+nav#Menu h3 {
+    display: none;
+}
+
+nav#Menu li:hover {
+    background-color: #606060;
+}
+
+nav#Menu a {
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+    text-decoration: underline;
+}
+section#corpo {
+    display: block;
+    width: 465px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px; 
+}
+article#noticia-principal h2 { 
+font-size: 12pt;
+color: #606060;
+background: #dddddd;
+padding: 5px 0px 5px 10px;
+margin: 10px 0px 10px 0px;
+}
+header#cabeçalho-artigo h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20pt;
+color: #606060;
+margin-bottom: 0px;
+margin-top: 0px;
+
+}
+header#cabeçalho-artigo h2 {
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+    
+}
+header#cabeçalho-artigo h3 {
+    
+}
+.direita {
+    text-align: right;
+}
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table#tabelaspec td {
+    border: 1px solid #606060;
+    padding: 10px;
+}
+table#tabelaspec td.ce {
+color: #dddddd;
+background-color: #606060;
+vertical-align: top;
+font-weight: bold;
+}
+table#tabelaspec caption {
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+table#tabelaspec td.cd {
+background-color: #cecece;
+}
+table#tabelaspec caption span {
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 10px;
+
+}
+
+aside#lateral {
+    display: block;
+    width: 380px;
+    float: right;
+    background-color: #dddddd;
+    padding-right: 15px;
+    margin: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0,.7);
+}
+aside#lateral h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+aside#lateral h4 {
+  background-color: #606060;
+  font-size: 15pt;
+  color: white;
+}
+    footer#rodape {
+        clear: both;
+        border-top: 1px solid #606060;
+    }
+footer#rodape p {
+    text-align: center;
+}
+
+nav#Menu a:hover{
+
+   color: black;
+   -webkit-transition: background-color 1s;
+    -moz-transition: backgroun-color 1s;
+    -o-transition: background-color 1s;
+    -ms-transition:backgroun-color 1s;
+    transition:background-color: 1s;
+
+}
+div#interface {
+    width: 900px;
+    background-color: aliceblue;
+    margin: -35px auto 0px auto;
+    box-shadow: 0px 0px 10px black;
+    padding: 10px 10px 10px 10px;
+}
+  body {
+    font-family: arial, sans-serif;
+    background-color: #dddddd;
+    color:rgba(0,0,0, 1)
+  }
+header#cabeçalho img#icone {
+    position: absolute;
+    left:1230px;
+    top:220px;
+}
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+header#cabeçalho {
+    border-bottom: #606060 solid;
+    height: 300px;
+    background: url("https://s2.glbimg.com/mgcv-8WtSY8FBqDvtnOngSH74Uc=/s.glbimg.com/jo/g1/f/original/2014/04/03/glass-logo-g1.jpg") no-repeat 0px 180px;
+    header#cabeçalho h1 {
+        font-family: arial sans-serif;
+        font-size: 30px;
+        color: 606060;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+
+}
+header#cabeçalho h2 {
+    font-family: Arial, sans-serif;
+    color: 888888;
+    font-size: 30pt;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+</style>
+<script> alert("Olá, Mundo!");</script>
+</head>
+
+<body>
+    
+    <div id="interface">
+
+        <header id="cabeçalho">
+             
+<hgroup>
+<h1>Google Glass</h1>
+<h2>A Revolução do Google Esta Chegando</h2>
+<h6>Editor: Igor Pain Maciel</h6>
+</hgroup>
+
+
+<img id="icone" src="/home/usuario/Documentos/glass-oculos-preto-peq.png"/>
+
+ <nav id="Menu">
+ <p><h3>Menu Principal</h3></p>
+ <ul type="disc">
+
+    <li><a href="https://www.linkdesignbrasil.com/google-glass-a-nova-invencao-do-google/" target="_blank">Home</li>
+
+    <li><a href="https://www.linkdesignbrasil.com/google-glass-a-nova-invencao-do-google/" target="_blank">especificaçoẽs> </li>
+
+    <li><a href="https://www.linkdesignbrasil.com/google-glass-a-nova-invencao-do-google/" target="_blank">Fotos</a></li>
+
+    <li><a href="https://www.linkdesignbrasil.com/google-glass-a-nova-invencao-do-google/" target="_blank">multimidia</li>
+
+    <li><a href="https://www.linkdesignbrasil.com/google-glass-a-nova-invencao-do-google/" target="_blank">Fale Conosco</a></li>
+
+ </ul>
+ </nav>
+
+</header>
+ <section id="corpo">
+
+<article>
+ <p><hgroup>
+ Tecnologia > e Inovação:</p>
+ Saiba Tudo Sobre o Google Glass Por Igor Pain Maciel
+ <h3 class="direita"> Atualizado Em 17/Setembro/2023</h3>
+</hgroup>
+
+ <h1 style="text-align: center;"><b><i>O que é</b></i></h1>
+ <p>O <span style="text-decoration: underline;">Google Glass</span> </p>é um acessório em forma de óculos que possibilita a interação dos usuários com diversos conteúdos em realidade aumentada.<br>
+ Também chamado de <a href="http://glass.google.com" target="_blank">Project Glass</a>, o eletrônico é capaz de tirar fotos a partir de comandos de voz, enviar mensagens instantâneas e realizar vídeo­ con­ferên­cias.<br>
+  Seu lançamento está previsto para 2014, e seu preço deve ser de US$ 1,5 mil. Atualmente o Google Glass encontra-se em fase de testes e já possui um vídeo totalmente gravado com o dispositivo.<br>
+   Além disso, a companhia de buscas registrou novas patentes anti-furto e de desbloqueio de tela para o acessório.<br>
+   <figure class="foto-legenda">
+    <img src="/home/usuario/Documentos/projeto/_fotos/glass-quadro-homem-mulher.jpg"/>
+ <figcaption><h3>google glass</h3>
+ <p>uma nova maneira de ver o mundo</p></figcaption>
+ </figure>
+
+ <h2>Data de lançamento</h2>
+ Não há uma data específica e oficial para o dispositivo ser lançado, ainda. Pode ser que ele esteja disponível em demonstrações a partir de 2013,
+  mas seu lançamento para as lojas fica para, pelo menos, 2014.
+
+ <h1>Especificações Técnicas</h1>
+ <table id="tabelaspec">
+    <caption>Tabela Técnica do Google <span>Mar/2013</span></caption>
+
+ <tr><td class="ce">Tela</td><td class="cd">Resolução equivalente a tela de 25"</td></tr>
+ <tr><td rowspan="2"class="ce" >Camera</td><td class="cd">5MP para fotos</td></tr>
+ <tr><td class="cd">720p para vídeos</td></tr>
+ <tr><td rowspan="2"class="ce" >Conectividade</td><td class="cd">	Wi-Fi </td></tr>
+ <tr><td class="cd">Bluetooth</td></tr>
+ <tr><td class="ce" >Memória Interna</td><td class="cd">12GB></td></tr>
+</table>
+
+ <h2>Como funciona</h2>
+ De acordo com fontes próximas do Google, os óculos vão contar com uma pequena tela de LCD ou AMOLED na parte superior e em frente aos olhos do usuário. Com o uso de uma câmera e GPS,<br> você pode se situar, assim como selecionar opções com o movimento da cabeça.
+
+ <h2>O que você pode fazer com o Google Glasses</h2>
+ O vídeo de divulgação do Google mostra que você pode se transformar em uma espécie de “super-humano”,<br>
+ já que o aparelho pode indicar a quantos metros você está de seu destino,<br> se o metrô está aberto ou fechado,
+  mostrar o clima, agenda e até mesmo permitir que você marque encontros apenas com comandos de voz.
+  
+ /* aqui entra um video */
+</article> 
+</section>
+
+
+<aside id="lateral">
+ <h1>Outras Notícias</h1><br>
+ 
+ <h4> video mas recente </h4>
+aqui entra um video<video src=""></video>
+ <h4>Novidades no Glass</h4>
+
+ <p>O Google enfim revelou as especificações completas do Google Glass, e com ele uma surpresa ainda inédita no mercado:<br> a gigante das buscas usará um sistema de áudio baseado na transdução por condução.<br> Através das hastes dos óculos, o som será transmitido para o ouvido do usuário por meio de microvibrações em determinados ossos de sua cabeça, sem usar nenhum tipo de alto-falante.</p>
+
+ <p>Além da surpresa do áudio, a tela montada a frente do olho do usuário também chamou atenção. Serão 640 x 360 pixels de resolução que,<br> em proporção,
+     equivaleria a um monitor de 25 polegadas de alta definição colocado a 2,5 metros de distância do espectador.</p>
+    </aside>
+    <footer id="rodape">
+       <p>copyright &copy; 2023 - by igor pain maciel<br> 
+       <a href="http://facebook.com/igorpainmaciel" target="_blank"/a>  facebook | instagram <br>whatssap </p>
+    </footer>
+</div>
+</body>
+</html>
